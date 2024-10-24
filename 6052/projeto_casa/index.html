@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Divisões da Casa</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Divisões da Casa</h1>
+        <div class="buttons">
+            <button onclick="showRoom('quarto1')">Quarto 1</button>
+            <button onclick="showRoom('quarto2')">Quarto 2</button>
+            <button onclick="showRoom('wc')">WC</button>
+            <button onclick="showRoom('cozinha')">Cozinha</button>
+            <button onclick="showRoom('sala')">Sala</button>
+        </div>
+        
+        <div id="room" class="room">
+            <h2 id="roomTitle"></h2>
+            <p id="lightStatus"></p>
+            <div id="lampIcon" class="lamp"></div>
+            <button id="lightButton" onclick="toggleLight()">Ligar Luz</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
